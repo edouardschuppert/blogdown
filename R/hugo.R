@@ -339,7 +339,7 @@ new_post = function(
 
   do.call(modify_yaml, c(list(
     file, title = title, author = author, date = format(date), slug = slug,
-    categories = as.list(categories), tags = as.list(tags)
+    categories = as.list(categories), tags = as.list(tags), type = "post"
   ), if (!file.exists('archetypes/default.md')) list(draft = NULL)
   ))
   if (open) open_file(file)
