@@ -317,7 +317,7 @@ new_post = function(
   title, kind = '', open = interactive(), author = getOption('blogdown.author'),
   categories = NULL, tags = NULL, date = Sys.Date(), file = NULL, slug = NULL,
   title_case = getOption('blogdown.title_case'),
-  subdir = getOption('blogdown.subdir', 'blog'), ext = getOption('blogdown.ext', '.md')
+  subdir = "blog", ext = getOption('blogdown.ext', '.md')
 ) {
   if (is.null(file)) file = post_filename(title, subdir, ext, date)
   file = trim_ws(file)  # trim (accidental) white spaces
