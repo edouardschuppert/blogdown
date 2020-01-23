@@ -17,7 +17,7 @@ xfun::in_dir(blogdown:::site_root(), local({
         txt_input('author', 'Author', getOption('blogdown.author', ''), width = '98%'),
         shiny::dateInput('date', 'Date', Sys.Date(), width = '98%'),
         txt_input(
-          'subdir', 'Subdirectory', getOption('blogdown.subdir', 'post'),
+          'subdir', 'Subdirectory', getOption('blogdown.subdir', 'blog'),
           '(optional)', width = '98%'
         ),
         height = '70px'

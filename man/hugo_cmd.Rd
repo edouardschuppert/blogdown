@@ -43,7 +43,7 @@ new_post(
   file = NULL,
   slug = NULL,
   title_case = getOption("blogdown.title_case"),
-  subdir = getOption("blogdown.subdir", "post"),
+  subdir = "blog",
   ext = getOption("blogdown.ext", ".md")
 )
 
